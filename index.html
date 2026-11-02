@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <link rel="stylesheet" href="1h.css" />
+    <title>root@tha:~$ ./play_video</title>
+  </head>
+  <body>
+    <canvas id="rain"></canvas>
+    <main>
+      <div class="bar">
+        <span>[<b>SECURE</b>] tunnel://tha.local</span
+        ><span id="clk">--:--:--</span>
+      </div>
+      <h1>&gt; ACCESS_GRANTED<span>_</span></h1>
+      <div class="win">
+        <div class="title">
+          <i></i><i></i><i></i><em>/home/tha/stream/video.mp4</em>
+        </div>
+        <div class="vwrap">
+          <video id="v" playsinline preload="auto"></video>
+          <div id="gate">
+            <pre id="boot"></pre>
+            <button id="go" style="display: none">
+              [ ENTER ] decrypt &amp; play
+            </button>
+          </div>
+        </div>
+        <div class="ctl">
+          <div class="seek">
+            <span id="t1">00:00</span
+            ><input id="sk" type="range" min="0" max="1000" value="0" /><span
+              id="t2"
+              >00:00</span
+            >
+          </div>
+          <button id="pp">▶ PLAY</button><button id="b10">« 10s</button
+          ><button id="f10">10s »</button><button id="mu">🔊 MUTE</button
+          ><button id="fs">⛶ FULL</button>
+        </div>
+      </div>
+      <div class="win">
+        <div class="title"><i></i><i></i><i></i><em>stdout</em></div>
+        <div class="log" id="log"></div>
+      </div>
+      <footer>~ keep calm &amp; hack the planet ~</footer>
+    </main>
+    <script src="jr.js"></script>
+  </body>
+</html>
